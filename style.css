@@ -8,6 +8,7 @@
     display: flex;
 }
 
+
 header {
     display: flex;
     justify-content: space-around;
@@ -32,8 +33,6 @@ footer {
 }
 
 .cell {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -44,6 +43,26 @@ footer {
     cursor: pointer;
 }
 
+#grid.cell.hidden {
+    display: none;
+}
+
+.easy-grid {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.hard-grid {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.crazy-grid {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
 .select {
     background-color: blue;
+    color: white;
 }
